@@ -1,0 +1,164 @@
+%% LyX 1.6.4 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[letterpaper,english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+
+
+\title{eniatka}
+\author{Devyn Cairns}
+
+\makeatother
+
+\usepackage{babel}
+
+\begin{document}
+
+\title{eniatka}
+
+
+\author{Devyn (yas'nawku-kodto-linga) Cairns}
+
+\maketitle
+To build a syntactically unambiguous language, like Lojban. Unlike
+Lojban however, I am not trying to build an auxilary language.
+
+
+\section{alphabet}
+
+Alphabet in eniatka is binary. Letters are either of level 0 or level
+1 (two groups, vowels + consonants).\\
+
+
+0: i e o u a
+
+1: k s r y t w d g n l x p\\
+
+
+That's a size 12 alphabet in total. Two level 0 letters can be joined
+to form one level 0 letter, sounding like a dipthong. Double level
+zeroes means you hold for twice normal length (what you personally
+would usually hold for). Double level ones are not allowed.
+
+
+\section{word format}
+
+All words in eniatka follow strict formatting rules. This is to enforce
+unambiguity. These formats are:\\
+
+
+010110, 10110, 11010, 1010, 010, 101\\
+
+
+Examples (a dot designates a dipthong):\\
+
+
+eniatka => 010.110
+
+sulxao => 10110.
+
+nwautai => 110.10.
+
+rewae => 1010.
+
+otoa => 010.
+
+let => 101\\
+
+
+This way, there is no confusion over what is a word and what isn't.
+
+For words (e.g. people, places, other names) from other languages:
+There is no restriction on format, but you must put colons before
+and after the word. Example: :dexen keraens:, a transliteration of
+my name.
+
+
+\section{complex word forming}
+
+Obviously you will want to describe words. To just say {}``plane''
+doesn't specify whose plane it is, nor what color it is.\\
+
+
+nista => plane
+
+nista-raulsi => white plane
+
+sin'nista-raulsi => that white plane
+
+aku'nista-tsauri-seogna => his nice blue plane\\
+
+
+Breaking this down, prefixes are belongs\_to statements, and suffixes
+are columns.
+
+
+\section{writing a sentence}
+
+Let's try something a bit more complex.\\
+
+
+lan sin'nista yaka. ipi-raulsi ban. => I that plane admire. Blue It
+is.
+
+
+\section{names}
+
+First, you should know what the meaning of your name is. If you don't,
+either search it on the internet, or make one up for your self.
+
+Names are generally constructed by taking a word for the meaning,
+and appending suffixes for extra meaning, like titles. Using a title
+with someone's name isn't required, but it can be used to clarify
+exactly who or what you're talking about.\\
+
+
+For example, I know that my name {}``Devyn'' translates to something
+along the lines of {}``all-teacher''. So I translate that: yas'nawku
+(teacher of all)
+
+Next, I would take my hobbies, programming and linguistics, and append
+them as suffixes: -kodto -linga
+
+Finally, we get yas'nawku-kodto-linga. You could just say {}``yas'nawku-kodto''
+or {}``yas'nawku-linga'' or even plain {}``yas'nawku'', but it
+could be confusing in a large room of people. Suffixes are optional,
+though.\\
+
+
+So if I wanted to say what my name is, I could say {}``yas'nawku-kodto-linga
+asra'ban''
+
+
+\section{grammar ideas}
+
+These are just basically my ideas for grammar.
+
+A..arg T..arg-append X..fun\\
+
+
+eniatka seogna => A X B C D E...
+
+eniatka seogna, yisa. => A (X, Y...)
+
+eniatka seogna lan, yisa lan => A (X B C D E..., Y B C D E...)
+
+eniatka seogna, yisa; lan => A (X B C D E..., Y B C D E...) ; T U
+V W...
+
+osa'lan silpai apiogus, pol'kanat; tal'saila. => Cat{[}\{of\}me, (plays\{with\}
+\& \{after\}eats), \{of-its\}food{]} :: My cat plays with and then
+eats its food.
+
+sin'asaipsu altain ikaesne-tap'isua, nikka aye'tokku. ipi kana plesa.
+=> \{that\}Human{[}moves \{to\}grocery store\{the favorite\}, browse
+everything{]} it{[}purchases food{]}
+
+yas'nawku-kodto-linga asra'ban => All-teacher (of code and language)
+self-am. => I am Devyn (of code and language).
+
+I think I like this one...
+\end{document}
